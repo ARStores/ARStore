@@ -26,6 +26,10 @@ document.addEventListener("DOMContentLoaded", function () {
                     }
                 }
 
+                    P {
+                        text-align: justify;
+                    }
+
                     .content {
                         margin: 0px 10px;
                     }
@@ -36,11 +40,15 @@ document.addEventListener("DOMContentLoaded", function () {
                     }
                     
                     #image-space {
-                        padding: 10px 50px;
+                        padding: 20px 50px;
+                    }
+
+                    #image-space img {
+                        border-radius: 10px;
                     }
 
                     #text-space {
-                        padding: 10px 10px
+                        padding: 10px 30px
                     }
 
                     @media screen and (max-width: 760px) {
@@ -56,12 +64,16 @@ document.addEventListener("DOMContentLoaded", function () {
                         #text-space {
                             padding: 10px 20px
                         }
+
+                        #image-space {
+                            padding: 20px 50px;
+                        }
                     }
                 </style>
                 <div class="content">
                         <div class="row align-items-center shadow rounded">
                             <div id="image-space"  class="col-md-6">
-                                <img src="${imageURL}" alt="Gambar Perkenalan" class="img-fluid">
+                                <img src="assets/image/jaipong.png" alt="Gambar Perkenalan" class="img-fluid">
                             </div>
                             <div id="text-space" class="col-md-6">
                                 <h1>${pageData.title}</h1>
@@ -76,13 +88,13 @@ document.addEventListener("DOMContentLoaded", function () {
                                 <p style="font-size: x-small;">*${pageData.note}</p>
                             </div>
                             <div id="image-space" class="col-md-6">
-                                <img src="${imageURL2}" alt="Gambar Perkenalan" class="img-fluid">
+                                <img src="assets/image/saman.png" alt="Gambar Perkenalan" class="img-fluid">
                             </div>
                         </div>  
 
                         <div class="row align-items-center shadow rounded">
                             <div id="image-space"  class="col-md-6">
-                                <img src="${imageURL3}" alt="Gambar Perkenalan" class="img-fluid">
+                                <img src="assets/image/sajojo.png" alt="Gambar Perkenalan" class="img-fluid">
                             </div>
                             <div id="text-space" class="col-md-6">
                                 <h1>${title3}</h1>
@@ -189,7 +201,6 @@ document.addEventListener("DOMContentLoaded", function () {
                             <div class="p-4">
                                     <h2>${title2}</h2>
                                     <hr>
-                                    <img id="img-size" src="assets/image/store-solid.svg" alt="Gambar Perkenalan" class="img-fluid">
                                     <p>${deskripsi2}</p>
                             </div>
                         </div>  
